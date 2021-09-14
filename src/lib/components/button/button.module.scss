@@ -1,0 +1,42 @@
+@import 'styles/variables.scss';
+
+.button {
+  background-color: $button-background-color;
+  border: none;
+  border-radius: 4px;
+  color: $button-foreground-color;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  font-size: $font-size-lg;
+  height: 36px;
+  padding: $padding-md $padding-lg;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.25s;
+  user-select: none;
+  white-space: nowrap;
+
+  &:active {
+    background-color: $button-background-color-active;
+    color: $button-foreground-color-active;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    color: $button-foreground-color-active;
+  }
+
+  &:disabled {
+    background-color: $button-background-color-disabled;
+    color: $button-foreground-color-disabled;
+    cursor: not-allowed;
+  }
+}
+
+.inverted {
+  background-color: white;
+  color: #1890ff;
+}
